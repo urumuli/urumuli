@@ -1,35 +1,52 @@
 .shop .category {
   padding: 30px;
-  height: 90vh;
+  height: auto; /* Adjust height to auto for better responsiveness */
 }
+
 .chead h1 {
   font-size: 20px;
   margin-bottom: 20px;
 }
+
 .chead h1:nth-child(2) {
   opacity: 0.5;
   border-left: 3px solid rgba(0, 0, 0, 0.5);
   padding-left: 70px;
 }
+
 .shop .category .box {
   background-color: #f6f9fc;
   margin: 15px 0;
   padding: 5px 10px;
   transition: 0.5s;
   border-radius: 5px;
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
 }
+
 .shop .category img {
-  width: auto;
-  height: auto;
+  width: 50px; /* Set a fixed width for images */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add space between image and text */
 }
+
+/* Adjusting font size for brand names */
+.shop .category span {
+  font-size: 14px; /* Set a smaller font size for brand names */
+  font-weight: 400; /* Adjust font weight if needed */
+  color: #333; /* Set a color for better contrast */
+}
+
 .shop .category .box:hover {
   background-color: #fff;
   box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
 }
+
 .shop .box2 {
   margin-top: 100px !important;
   text-align: center;
 }
+
 .shop .category button {
   padding: 10px;
   background: none;
@@ -47,13 +64,65 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 }
+
 .shop .product img {
   width: 100%;
-  height: 100%;
+  height: auto; /* Maintain aspect ratio */
 }
+
 .shop .product {
   transition: 0.5s;
 }
+
 .shop .product:hover {
   box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .shop .category {
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+  .chead h1 {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+  .shop .category .box {
+    margin: 10px 0; /* Reduce margin for smaller screens */
+  }
+  .shop .category span {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+  .shop .category button {
+    font-size: 15px; /* Adjust button font size for smaller screens */
+  }
+  .shop .contentWidth {
+    margin-left: 20px; /* Reduce margin for smaller screens */
+  }
+  .grid1 {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .shop .category {
+    padding: 15px; /* Further reduce padding for mobile */
+  }
+  .chead h1 {
+    font-size: 16px; /* Further adjust font size for mobile */
+  }
+  .shop .category .box {
+    margin: 5px 0; /* Further reduce margin for mobile */
+  }
+  .shop .category span {
+    font-size: 10px; /* Further adjust font size for mobile */
+  }
+  .shop .category button {
+    font-size: 14px; /* Further adjust button font size for mobile */
+  }
+  .shop .contentWidth {
+    margin-left: 10px; /* Further reduce margin for mobile */
+  }
+  .grid1 {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
 }

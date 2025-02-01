@@ -3,34 +3,91 @@ footer {
   padding: 100px 0;
   color: #fff;
 }
+
 footer h1 {
   margin-bottom: 30px;
   color: #e94560;
   font-weight: 800;
   font-style: italic;
+  text-align: center; /* Center the heading for better mobile presentation */
 }
+
 footer .img {
   background-color: #0c2a4d;
   padding: 15px 20px;
   border-radius: 5px;
+  text-align: center; /* Center content within the image box */
 }
+
 footer .img i {
   font-size: 20px;
   margin: 5px;
 }
+
 footer .img span {
   margin-top: 5px;
 }
+
 footer p {
   font-size: 14px;
   font-weight: 300;
   opacity: 0.5;
   margin-bottom: 20px;
+  text-align: center; /* Center text for better mobile presentation */
 }
+
 footer h2 {
   margin-bottom: 20px;
+  text-align: center; /* Center the heading for better mobile presentation */
 }
+
 footer li {
   margin-bottom: 10px;
   opacity: 0.5;
+  text-align: center; /* Center list items for better mobile presentation */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  footer {
+    padding: 60px 0; /* Reduce padding for smaller screens */
+  }
+
+  footer h1 {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+
+  footer p {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+
+  footer h2 {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  footer li {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 40px 0; /* Further reduce padding for mobile */
+  }
+
+  footer h1 {
+    font-size: 20px; /* Further adjust font size for mobile */
+  }
+
+  footer p {
+    font-size: 10px; /* Further adjust font size for mobile */
+  }
+
+  footer h2 {
+    font-size: 16px; /* Further adjust font size for mobile */
+  }
+
+  footer li {
+    font-size: 10px; /* Further adjust font size for mobile */
+  }
 }

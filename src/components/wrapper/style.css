@@ -1,6 +1,8 @@
 .wrapper {
   text-align: center;
+  padding: 20px; /* Add padding for better appearance on small screens */
 }
+
 .wrapper .img {
   margin: auto;
   width: 70px;
@@ -8,17 +10,62 @@
   line-height: 70px;
   margin-bottom: 20px;
 }
+
 .wrapper .img i {
   font-size: 25px;
 }
+
 .wrapper .product {
   padding: 30px;
 }
+
 .wrapper .product h3 {
   font-weight: 500;
 }
+
 .wrapper p {
   font-size: 15px;
   margin-top: 20px;
   color: grey;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .wrapper .img {
+    width: 50px; /* Reduce size for smaller screens */
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .wrapper .img i {
+    font-size: 20px; /* Adjust icon size */
+  }
+
+  .wrapper .product {
+    padding: 20px; /* Reduce padding */
+  }
+
+  .wrapper p {
+    font-size: 14px; /* Adjust font size for better readability */
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper .img {
+    width: 40px; /* Further reduce size */
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .wrapper .img i {
+    font-size: 18px; /* Adjust icon size */
+  }
+
+  .wrapper .product {
+    padding: 15px; /* Reduce padding */
+  }
+
+  .wrapper p {
+    font-size: 13px; /* Adjust font size for small screens */
+  }
 }

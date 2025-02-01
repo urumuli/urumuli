@@ -3,15 +3,59 @@
   height: 40px;
   margin-top: 5px;
 }
+
 .NewArrivals h4 {
   font-weight: 400;
 }
+
 .NewArrivals span {
   color: #e94560;
   font-size: 15px;
   font-weight: 500;
 }
+
 .NewArrivals .box img {
   width: 100%;
   height: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .heading img {
+    width: 30px; /* Adjust image size for smaller screens */
+    height: 30px; /* Adjust image size for smaller screens */
+  }
+
+  .NewArrivals span {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .NewArrivals h4 {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  .NewArrivals .box img {
+    width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+@media (max-width: 480px) {
+  .heading img {
+    width: 25px; /* Further adjust image size for mobile */
+    height: 25px; /* Further adjust image size for mobile */
+  }
+
+  .NewArrivals span {
+    font-size: 12px; /* Further adjust font size for mobile */
+  }
+
+  .NewArrivals h4 {
+    font-size: 14px; /* Further adjust font size for mobile */
+  }
+
+  .NewArrivals .box img {
+    width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
 }

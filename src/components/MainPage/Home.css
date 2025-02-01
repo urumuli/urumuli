@@ -1,24 +1,30 @@
+/* Home Slide Styles */
 .homeSlide h1 {
   font-size: 45px;
   line-height: 55px;
   margin: 50px 0 20px 0;
 }
+
 .homeSlide p {
   margin: 20px 0;
 }
+
 .homeSlide ul {
   position: absolute;
   bottom: 20px;
 }
+
 .homeSlide ul li {
   border: 2px solid #b8b7b7;
   border-radius: 50%;
   padding: 10px;
 }
+
 .homeSlide ul li button {
   background: transparent !important;
   color: transparent !important;
 }
+
 .homeSlide ul li button::before {
   font-size: 15px !important;
   color: #0f3460;
@@ -26,4 +32,75 @@
   top: 2px;
   left: 0;
   margin: auto;
+}
+
+.categories-container {
+  cursor: pointer;
+}
+
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.box {
+  margin: 10px;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .homeSlide h1 {
+    font-size: 36px; /* Adjust font size for smaller screens */
+    line-height: 45px; /* Adjust line height for smaller screens */
+    margin: 30px 0 15px 0; /* Adjust margins for smaller screens */
+  }
+  
+  .homeSlide p {
+    font-size: 14px; /* Adjust paragraph font size for smaller screens */
+    margin: 15px 0; /* Adjust margins for smaller screens */
+  }
+  
+  .homeSlide ul {
+    bottom: 10px; /* Adjust position for smaller screens */
+    flex-direction: row; /* Align items in a row */
+    justify-content: center; /* Center items */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .homeSlide ul li {
+    padding: 8px; /* Adjust padding for smaller screens */
+    margin: 0 5px; /* Add margin for spacing */
+  }
+  
+  .homeSlide ul li button::before {
+    font-size: 12px !important; /* Adjust button icon size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .homeSlide h1 {
+    font-size: 28px; /* Further reduce font size for mobile */
+    line-height: 36px; /* Further adjust line height for mobile */
+    margin: 20px 0 10px 0; /* Further adjust margins for mobile */
+  }
+  
+  .homeSlide p {
+    font-size: 12px; /* Further adjust paragraph font size for mobile */
+    margin: 10px 0; /* Further adjust margins for mobile */
+  }
+  
+  .homeSlide ul {
+    bottom: 5px; /* Further adjust position for mobile */
+  }
+  
+  .homeSlide ul li {
+    padding: 6px; /* Further adjust padding for mobile */
+    margin: 0 3px; /* Reduce margin for tighter spacing */
+  }
+  
+  .homeSlide ul li button::before {
+    font-size: 10px !important; /* Further adjust button icon size for mobile */
+  }
 }

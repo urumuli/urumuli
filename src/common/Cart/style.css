@@ -14,44 +14,53 @@
   margin-left: 30px;
   height: 130px;
 }
+
 .cart-list {
   background: white;
   margin-top: 30px;
 }
+
 .cart-items .img {
   width: 150px;
   height: 150px;
 }
+
 .cart-items img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
+
 .cart-items .cart-details h3 {
   font-size: 20px;
   font-weight: 500;
   margin-top: 20px;
 }
+
 .cart-items .cart-details h4 {
   font-size: 15px;
   font-weight: 400;
   margin-top: 50px;
   color: grey;
 }
+
 .cart-items h4 span {
   color: #e94560;
   margin-left: 20px;
   font-weight: 500;
 }
+
 .removeCart {
   background: none;
   font-size: 25px;
   text-align: right;
   margin-right: 10px;
 }
+
 .cartControl {
   margin-top: 50px;
 }
+
 .cartControl button {
   width: 40px;
   height: 40px;
@@ -59,23 +68,28 @@
   border-radius: 5px;
   font-size: 20px;
 }
+
 .incCart {
   background: none;
   border: 1px solid rgb(3 0 71 / 9%);
   color: #e94560;
 }
+
 .desCart {
   background: #f6f9fc;
 }
+
 .cart-total h4 {
   font-size: 15px;
   font-weight: 400;
 }
+
 .cart-total h3 {
   font-size: 20px;
   font-weight: 500;
   color: #e94560;
 }
+
 .cart-total h2 {
   font-size: 18px;
   margin-bottom: 20px;
@@ -83,9 +97,83 @@
   padding-bottom: 10px;
   color: #e94560;
 }
+
 .no-items {
   color: #e94560;
   font-size: 18px;
   margin-top: 30px;
   height: 130px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .cart-items {
+    padding: 30px 0; /* Reduce padding for smaller screens */
+  }
+
+  .cart-items .cart-details {
+    width: 100%; /* Full width on mobile */
+    margin-bottom: 20px; /* Add margin for spacing */
+  }
+
+  .cart-items .cart-total {
+    width: 100%; /* Full width on mobile */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .cartControl {
+    margin-top: 20px; /* Reduce margin for smaller screens */
+  }
+
+  .cartControl button {
+    width: 35px; /* Adjust button size */
+    height: 35px; /* Adjust button size */
+    font-size: 18px; /* Adjust font size */
+  }
+
+  .cart-items .img {
+    width: 100px; /* Reduce image size for mobile */
+    height: 100px; /* Reduce image size for mobile */
+  }
+
+  .cart-items .cart-details h3 {
+    font-size: 18px; /* Adjust font size for mobile */
+  }
+
+  .cart-items .cart-details h4 {
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+
+  .cart-total h2 {
+    font-size: 16px; /* Adjust font size for mobile */
+  }
+
+  .no-items {
+    font-size: 16px; /* Adjust font size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-items .cart-details h3 {
+    font-size: 16px; /* Further adjust font size for mobile */
+  }
+
+  .cart-items .cart-details h4 {
+    font-size: 12px; /* Further adjust font size for mobile */
+  }
+
+  .cartControl button {
+    width: 30px; /* Further adjust button size */
+    height: 30px; /* Further adjust button size */
+    font-size: 16px; /* Further adjust font size */
+  }
+
+  .cart-items .img {
+    width: 80px; /* Further reduce image size for mobile */
+    height: 80px; /* Further reduce image size for mobile */
+  }
+
+  .cart-total h2 {
+    font-size: 14px; /* Further adjust font size for mobile */
+  }
 }

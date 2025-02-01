@@ -8,7 +8,7 @@ const Cart = ({ CartItem, addToCart, decreaseQty }) => {
   // prodcut qty total
   const handlePlaceOrder = () => {
     // Replace 'your-phone-number' with your actual WhatsApp number
-    window.open('https://wa.me/250791322340?text=I%20would%20like%20to%20place%20an%20order%20for%20my%20cart%20items.', '_blank');
+    window.open('https://wa.me/250789574860?text=I%20would%20like%20to%20place%20an%20order%20for%20my%20cart%20items.', '_blank');
   };
   return (
     <>

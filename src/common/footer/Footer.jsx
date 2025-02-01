@@ -8,7 +8,7 @@ const Footer = () => {
         <div className='container grid2'>
           <div className='box'>
             <h1>URUMULI </h1><h6>online shop</h6>
-            <p>We bring right into your hands .</p>
+            <p>We bring it right into your hands .</p>
             <div className='icon d_flex'>
             
             </div>
@@ -38,8 +38,8 @@ const Footer = () => {
             <h2>Contact Us</h2>
             <ul>
               <li>RWANDA - Kigali </li>
-              <li>Email: bernardmutabazi94@gmail.com</li>
-              <li>Phone: +250791322340</li>
+              <li>Email: Urumurinoella@gmail.com</li>
+              <li>Phone: +250789574860</li>
             </ul>
           </div>
         </div>
